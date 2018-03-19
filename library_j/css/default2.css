@@ -1,0 +1,327 @@
+/******************************************************
+/* piab_structure.css
+/* created: 2005-02-03 (henrik)
+/*
+/* contains basic framework styling
+/*****************************************************/
+/* DEAFULT FRAMEWORK
+/******************************************************/
+
+BODY
+{
+	background-color: #F4F4F4;
+	background-image: url(/images/piab.png);
+        
+	background-repeat: repeat-y;
+}
+
+.WorkArea
+{
+	width: 770px;
+	margin: 0px auto;
+}
+
+#MastHead
+{
+	position: relative;
+	text-align: left;
+	line-height: 0;
+	background: #FFFFFF;
+	color: #666666;
+}
+
+#MainPage
+{
+	clear: both;
+	position: relative;
+	padding: 0;
+	text-align: left;
+}
+
+.TemplateArea,
+.BlockArea
+{
+	display: block;
+}
+
+
+/******************************************************
+/* PAGETYPE: Standard
+/******************************************************/
+#SubMenu
+{
+	position: relative;
+	float: left;
+	width: 150px;
+	overflow-x: hidden; /* Extension edit mode fix */
+}
+
+.Content
+{
+	float: right;
+	width: 590px;
+	margin: 15px 0px 15px 0px;
+	display: inline; /* IE float margin fix*/
+	overflow-x: hidden; /* Extension edit mode fix */
+
+}
+
+.Content .OneColumn .Main
+{
+	width: 100%; /* IE bug tweak */
+}
+
+.Content .TwoColumn .Main
+{
+	float: left;
+	width: 375px;
+	overflow-x: hidden; /* Extension edit mode fix */
+}
+
+.Content .TwoColumn .SideBar
+{
+	float: right;
+	width: 200px;
+	text-align: right;
+	overflow-x: hidden; /* Extension edit mode fix */
+}
+
+
+/******************************************************
+/* PAGETYPE: FullWidth
+/******************************************************/
+BODY.FullWidth
+{
+	background-image: url(/images/framework/bg_main_fullwidth.gif);
+}
+
+BODY.FullWidth .Content
+{
+	position: relative;
+	display: block;
+	width: auto;
+	float: none;
+	margin-left: 15px;
+}
+
+/******************************************************
+/* PAGETYPE: FrontPage	[see piab_frontpage.css]
+/******************************************************/
+
+/******************************************************
+/* PAGETYPE: PopUp
+/******************************************************/
+BODY.PopUp,
+BODY.PopUp #PseudoBody
+{
+	background-image: none;
+	background-color: #FFFFFF;
+}
+
+BODY.PopUp #PseudoBody
+{
+	padding: 20px;
+}
+BODY.PopUp IMG
+{
+	display: block;
+	margin: 0 auto;
+}
+
+BODY.PopUp #Footer
+{
+	background-image: none;
+	background-color: #0060A9;
+}
+
+BODY.PopUp #Footer .WorkArea
+{
+	width: auto;
+}
+
+/*********************************************************
+/* VALUES BAR
+/*********************************************************/
+
+#Logotype
+{
+	bottom: 100px;
+}
+
+
+.ValueImage
+{
+	margin: 1px 1px 1px 0;
+}
+
+/*********************************************************
+/* QUICK LINKS CONTAINER + LANGUAGE INDICATOR
+/*********************************************************/
+#quicklinks-container
+{
+	height: 30px;
+	font-size: 10px;
+}
+
+#QuickLinks
+{
+	position: absolute;
+	top: 8px;
+	right: 5px;
+	line-height: normal;
+	height: 1px;
+	text-align: right;
+}
+
+#QuickLinks A
+{
+	color: #666666;
+}
+
+#QuickLinks A:hover
+{
+	text-decoration: underline;
+}
+
+#LanguageIndicator
+{
+	position: absolute;
+	top: 8px;
+	right: 5px;
+	line-height: normal;
+	height: 1px;
+	text-align: left;
+}
+
+/******************************************************
+/* TOP MENU
+/******************************************************/
+#TopMenuBar
+{
+	padding-left: 20px;
+	line-height: 0;
+	background: url(/images/framework/bg_menu.gif) repeat-x top left;
+	height: 24px;
+}
+
+#TopMenuBar .MenuItem
+{
+	display: block;
+	float: left;
+}
+
+#TopMenuBar A.Selected, #TopMenuBar A:hover
+{
+	color: #333333;
+	text-decoration: none;
+}
+
+/*********************************************************
+/* QUICK SEARCH
+/*********************************************************/
+
+#QuickSearch
+{
+	position: absolute;
+	right: 0;
+	margin: 1px 15px 4px;
+}
+
+#QuickSearch .TextBox
+{
+	border-color: #CCCCCC;
+	color: #666666;
+}
+
+#QuickSearch .Button
+{
+	border: solid 1px #CCCCCC;
+	margin: 2px;
+}
+
+/******************************************************
+/* SUB MENU
+/******************************************************/
+
+#SubMenu
+{
+	margin-top: 9px;
+}
+
+#SubMenu A
+{
+	display: block;
+	color: #666666;
+	padding: 5px 5px 5px 7px;
+	font-size: 10px;
+	border: solid 1px #F4F4F4;
+	border-width: 1px 0;
+	height: 1%;
+	font-weight: normal;
+	margin: 1px 0;
+}
+
+#SubMenu A:hover
+{
+	background-color: #FFFFFF;
+	border: solid 1px #D8D8D8;
+	border-width: 1px 0;
+	text-decoration: none;
+	color: #333333;
+}
+
+#SubMenu .level1
+{
+	padding-left: 10px;
+}
+
+#SubMenu .level2
+{
+	padding-left: 22px;
+	background-image: url(/images/framework/submenu_indicator_2.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+#SubMenu .level3
+{
+	padding-left: 32px;
+	background: url(/images/framework/submenu_indicator_3.gif) no-repeat top left;
+}
+
+#SubMenu .Selected
+{
+	background-color: #FFFFFF;
+	border: solid 1px #D8D8D8;
+	border-width: 1px 0;
+	text-decoration: none;
+	color: #333333;
+	font-weight: bold;
+}
+
+/******************************************************
+/* FOOTER
+/******************************************************/
+#PageInfo
+{
+	font-size: .8em;
+	color: #999999;
+	text-align: right;
+}
+
+/******************************************************
+/* FOOTER
+/******************************************************/
+
+#Footer
+{
+	background-image: url(../images/framework/bg_footer.gif);
+	background-position: center bottom;
+	background-repeat: repeat-y;
+}
+
+#Footer .WorkArea
+{
+	text-align: center;
+	padding: 6px 0;
+}
