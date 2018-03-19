@@ -1,5 +1,5 @@
 # Web-applications
-Some web-dev work , PHP/MySQL .All Projects can be run using WAMP server, or other php parsers/servers. In some projects i have dumped sql exports too. If WAMP is used , you can directly import databeses and its tables using MyPHPAdmin.
+Some web-dev work , PHP/MySQL and Java used .All Projects can be run using WAMP server, or other php parsers/servers. In some projects i have dumped sql exports too. If WAMP is used , you can directly import databeses and its tables using MyPHPAdmin.
 
 ## library_j
 A	vanilla	Web–application	made	with	PHP/MySQL,html,css,Js	,	no	frameworks	used,	around	20	pages	.
