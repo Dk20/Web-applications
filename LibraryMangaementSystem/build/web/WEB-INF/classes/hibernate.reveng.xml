@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="librarydb"/>
+  <table-filter match-name="userdetails"/>
+  <table-filter match-name="stockdetails"/>
+  <table-filter match-name="returnbookdetails"/>
+  <table-filter match-name="issuedbookdetails"/>
+  <table-filter match-name="employeedetails"/>
+  <table-filter match-name="bookdetails"/>
+</hibernate-reverse-engineering>

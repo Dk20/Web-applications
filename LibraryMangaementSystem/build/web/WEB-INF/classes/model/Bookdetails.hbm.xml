@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 Dec, 2016 11:26:18 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="model.Bookdetails" table="bookdetails" catalog="librarydb">
+        <id name="bookId" type="java.lang.Integer">
+            <column name="BookId" />
+            <generator class="identity" />
+        </id>
+        <property name="stockId" type="int">
+            <column name="StockId" not-null="true" />
+        </property>
+        <property name="bookName" type="string">
+            <column name="BookName" length="20" not-null="true" />
+        </property>
+        <property name="authorName" type="string">
+            <column name="AuthorName" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 Dec, 2016 11:26:18 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="model.Employeedetails" table="employeedetails" catalog="librarydb">
+        <id name="empId" type="java.lang.Integer">
+            <column name="EmpId" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="Name" length="20" not-null="true" />
+        </property>
+        <property name="doB" type="string">
+            <column name="DoB" length="10" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="40" not-null="true" />
+        </property>
+        <property name="pincode" type="string">
+            <column name="Pincode" length="10" not-null="true" />
+        </property>
+        <property name="phNo" type="string">
+            <column name="Ph_no" length="10" not-null="true" />
+        </property>
+        <property name="emailId" type="string">
+            <column name="email_id" length="30" not-null="true" />
+        </property>
+        <property name="userName" type="string">
+            <column name="user_name" length="10" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
