@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 Dec, 2016 11:26:18 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="model.Userdetails" table="userdetails" catalog="librarydb">
+        <id name="userId" type="java.lang.Integer">
+            <column name="UserId" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="Name" length="20" not-null="true" />
+        </property>
+        <property name="doB" type="string">
+            <column name="DoB" length="10" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="40" not-null="true" />
+        </property>
+        <property name="pincode" type="string">
+            <column name="Pincode" length="10" not-null="true" />
+        </property>
+        <property name="phNo" type="string">
+            <column name="Ph_no" length="10" not-null="true" />
+        </property>
+        <property name="emailId" type="string">
+            <column name="email_id" length="30" not-null="true" />
+        </property>
+        <property name="availableIssues" type="int">
+            <column name="AvailableIssues" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

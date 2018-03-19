@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 Dec, 2016 11:26:18 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="model.Stockdetails" table="stockdetails" catalog="librarydb">
+        <id name="stockId" type="java.lang.Integer">
+            <column name="StockId" />
+            <generator class="identity" />
+        </id>
+        <property name="totalStock" type="int">
+            <column name="Total_stock" not-null="true" />
+        </property>
+        <property name="availableStock" type="int">
+            <column name="Available_stock" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
